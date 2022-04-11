@@ -24,8 +24,6 @@ def write_file(data, user):
     with open(f'{user}_repos.json', 'w', encoding='utf-8') as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
 
-    print('Work is done, master!')
-
 
 def main():
     user = input('Введите логин пользователя: ')

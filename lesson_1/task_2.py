@@ -22,8 +22,6 @@ def main(user_id):
     with open(f'{user_id}_communities.json', 'w', encoding='utf-8') as file:
         json.dump(req, file, ensure_ascii=False, indent=4)
 
-    print('Work is done, master!')
-
 
 if __name__ == '__main__':
     user_id = input('Введите ID юзера')
